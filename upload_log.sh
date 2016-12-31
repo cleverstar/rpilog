@@ -7,3 +7,5 @@ sed -e 's/.\[32m//' -e 's/.\[0m//' /var/log/boot.log > $update_file
 myip.sh >> $update_file
 git commit -am "Updated $update_file"
 git push origin
+
+env > /root/temp.txt
