@@ -1,12 +1,8 @@
 #!/bin/bash
 
 for ((i=0; i<10; i++)); do
-    myip=$(ifconfig wlan0 | grep -oP "inet addr:\K\S+") 
-    if [ "$myip" != "" ]; then
-        break
-    else
-        sleep 1
-    fi
+    myip=$(ifconfig wlan0 | grep -oP "inet addr:\K\S+") && break
+    sleep 1
 done
     
 cd $(dirname $0)
