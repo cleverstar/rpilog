@@ -72,6 +72,4 @@
 [  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
-My IP address for rpi0
-	 eth0: 10.5.5.1
-	 wlan0: 192.168.0.16
+
