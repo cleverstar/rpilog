@@ -2,6 +2,7 @@
 
 cd $(dirname)
 git pull
-cat /var/log/boot.log > boot.log.$(hostname)
-git commit
+update_file=boot.log.$(hostname)
+cat /var/log/boot.log > $update_file
+git commit -am "Updated $update_file"
 git push origin
