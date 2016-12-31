@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for ((i=0; i<100; i++)); do
+for ((i=0; i<16; i++)); do
     myip=$(ifconfig wlan0 | grep -oP "inet addr:\K\S+") && break
     sleep 1
 done
