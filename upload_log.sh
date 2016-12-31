@@ -3,7 +3,6 @@
 for ((i=0; i<10; i++)); do
     myip=$(ifconfig wlan0 | grep -oP "inet addr:\K\S+") 
     if [ "$myip" ]; then
-	echo "My IP address is $myip"
         break
     else
         sleep 1
