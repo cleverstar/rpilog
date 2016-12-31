@@ -2,7 +2,7 @@
 
 for ((i=0; i<10; i++)); do
     if [ myip=$(ifconfig wlan0 | grep -oP "inet addr:\K\S+") ]; then
-        break;
+        break
     else
         sleep 1
     fi
