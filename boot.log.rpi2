@@ -1,12 +1,14 @@
-Sat Dec 31 15:57:23 EST 2016
-[    4.405898] systemd-fsck[214]: fsck.fat 3.0.27 (2014-11-12)
-[  OK  ] Reached target Local File Systems (Pre).
-[    4.441625] systemd-fsck[214]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
-[  OK  ] Started File System Check on /dev/mmcblk0p1.
-[  OK  ] Started Load/Save Random Seed.
+Sat Dec 31 15:57:25 EST 2016
+  OK  ] Started File System Check on /dev/mmcblk0p1.
+[    6.798667] systemd-fsck[203]: Automatically removing dirty bit.
+[    6.799670] systemd-fsck[203]: Performing changes.
+[    6.801425] systemd-fsck[203]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
+         Starting Load/Save Random Seed...
+[  OK  ] Reached target Local File Systems (Pre).
          Mounting /boot...
+[  OK  ] Started Load/Save Random Seed.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Mounted /boot.
@@ -17,9 +19,9 @@ Sat Dec 31 15:57:23 EST 2016
          Starting Trigger Flushing of Journal to Persistent Storage...
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
-         Starting LSB: Raise network interfaces....
-[  OK  ] Reached target Paths.
 [  OK  ] Created slice system-ifup.slice.
+[  OK  ] Reached target Paths.
+         Starting LSB: Raise network interfaces....
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Create Volatile Files and Directories.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
