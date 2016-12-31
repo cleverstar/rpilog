@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd $(dirname)
+cd $(dirname $0)
 git pull
 update_file=boot.log.$(hostname)
 cat /var/log/boot.log > $update_file
