@@ -1,21 +1,19 @@
-Sun Jan  1 02:31:28 EST 2017
-
+Sun Jan  1 02:22:16 EST 2017
 [  OK  ] Reached target Local File Systems (Pre).
-[    4.830645] systemd-fsck[218]: fsck.fat 3.0.27 (2014-11-12)
-[    4.832277] systemd-fsck[218]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    4.833811] [  OK  ] Started File System Check on /dev/mmcblk0p1.
-systemd-fsck[218]: Automatically removing dirty bit.
-[    4.840404] systemd-fsck[218]: Performing changes.
-[    4.841694] systemd-fsck[218]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Started Load/Save Random Seed.
+[    5.038526] systemd-fsck[217]: fsck.fat 3.0.27 (2014-11-12)
+[    5.040225] systemd-fsck[217]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    5.041487] systemd-fsck[217]: Automatically removing dirty bit.
+[  OK  ] Started File System Check on /dev/mmcblk0p1.
+[    5.042617] systemd-fsck[217]: Performing changes.
+         Mounting /boot...
+[    5.043410] systemd-fsck[217]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-         Mounting /boot...
 [  OK  ] Started Show Plymouth Boot Screen.
+[  OK  ] Mounted /boot.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Created slice system-ifup.slice.
-[  OK  ] Reached target Paths.
-[  OK  ] Mounted /boot.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
@@ -24,6 +22,7 @@ systemd-fsck[218]: Automatically removing dirty bit.
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unles... is pressed)...
          Starting LSB: Raise network interfaces....
+[  OK  ] Reached target Paths.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Create Volatile Files and Directories.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless...ey is pressed).
