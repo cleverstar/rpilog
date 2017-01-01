@@ -18,7 +18,6 @@ if [ "$from_host" = "$myhost" ]; then
         sleep 1
     done
     
-    git pull --force
     update_file=boot.log.$myhost
     date > $update_file
     sed -e 's/.\[32m//' -e 's/.\[0m//' /var/log/boot.log >> $update_file
