@@ -18,10 +18,9 @@ if [ "$from_host" = "$myhost" ]; then
         sleep 1
     done
     
-    test "$myhost" = "rpi0" && git pull --commit
+    git pull --force
     update_file=boot.log.$myhost
     date > $update_file
-date > ~/temp.txt
     sed -e 's/.\[32m//' -e 's/.\[0m//' /var/log/boot.log >> $update_file
     echo "Host $(hostname) IP address $myip" >> $update_file
 else
@@ -38,7 +37,7 @@ if [ "$myhost" = "rpi0" ]; then
             sleep 1
         done
         git commit -am "Updated boot.log"
-        git push origin
+        git push origin --force
     fi
 else
     ssh rpi0 $0 $myhost
