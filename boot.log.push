@@ -9,7 +9,7 @@ else
     from_host=$myhost
 fi
 
-ssh rpi0 touch .wait.$from_host
+ssh rpi0 touch $mydir/.wait.$from_host
 
 cd $mydir
 if [ "$from_host" = "$myhost" ]; then
