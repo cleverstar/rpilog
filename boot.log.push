@@ -3,7 +3,7 @@
 
 myhost=$(hostname)
 mydir=$(dirname $0)
-if [ $# -gt 1 ]; then
+if [ $# -gt 0 ]; then
     from_host=$1
 else
     from_host=$myhost
