@@ -1,4 +1,5 @@
 #!/bin/bash
+# Usage: push [from_host]
 
 myhost=$(hostname)
 mydir=$(dirname $0)
@@ -10,13 +11,13 @@ fi
 
 ssh rpi0 touch .wait.$from_host
 
+cd $mydir
 if [ "$from_host" = "$myhost" ]; then
     for ((i=0; i<16; i++)); do
         myip=$(ifconfig wlan0 | grep -oP "inet addr:\K\S+") && break
         sleep 1
     done
     
-    cd $mydir
     test "$myhost" = "rpi0" && git pull --commit
     update_file=boot.log.$myhost
     date > $update_file
@@ -28,13 +29,13 @@ else
 fi
 
 if [ "$myhost" = "rpi0" ]; then 
-    head_host=$(ls .wait.* | grep -oP ".wait.\K\S+" | head -1)
+    first_wait=$(ls .wait.* | grep -oP ".wait.\K\S+" | head -1)
     rm .wait.$from_host
-    while [ -f .wait.* ]; do
-        sleep 1
-    done
 
-    if [ "$from_host" = "$head_host" ]; then
+    if [ "$from_host" = "$first_wait" ]; then
+        while [ -f .wait.* ]; do
+            sleep 1
+        done
         git commit -am "Updated boot.log"
         git push origin
     fi
