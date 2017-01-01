@@ -1,19 +1,12 @@
-Sun Jan  1 02:22:10 EST 2017
-[    5.820889] systemd-fsck[203]: fsck.fat 3.0.27 (2014-11-12)
-[    5.841832] systemd-fsck[203]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    5.843118] systemd-fsck[203]: Automatically removing dirty bit.
-[  OK  ] Reached target Local File Systems (Pre).
-[    5.844499] systemd-fsck[203]: Performing changes.
-[    5.845982] systemd-fsck[203]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
-[  OK  ] Started File System Check on /dev/mmcblk0p1.
-[  OK  ] Started Load/Save Random Seed.
+Sun Jan  1 02:22:09 EST 2017
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
+         Starting Load/Save Random Seed...
+[  OK  ] Reached target Local File Systems (Pre).
          Mounting /boot...
-[  OK  ] Started Show Plymouth Boot Screen.
+[  OK  ] Started Load/Save Random Seed.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
-[  OK  ] Created slice system-ifup.slice.
-[  OK  ] Reached target Paths.
+[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Mounted /boot.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
@@ -23,10 +16,12 @@ Sun Jan  1 02:22:10 EST 2017
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
          Starting LSB: Raise network interfaces....
+[  OK  ] Created slice system-ifup.slice.
+[  OK  ] Reached target Paths.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Create Volatile Files and Directories.
-[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started LSB: Prepare console.
          Starting LSB: Set console font and keymap...
