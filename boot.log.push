@@ -3,7 +3,7 @@
 
 myhost=$(hostname)
 mydir=$(dirname $0)
-echo "dir ==== $dir"
+echo "dir ==== $mydir"
 if [ $# -gt 1 ]; then
     from_host=$1
 else
