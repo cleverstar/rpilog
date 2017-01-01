@@ -1,17 +1,16 @@
-Sun Jan  1 18:34:15 EST 2017
-[  OK  ] Reached target Local File Systems (Pre).
-[    4.743318] systemd-fsck[220]: fsck.fat 3.0.27 (2014-11-12)
-[    4.744849] systemd-fsck[220]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    4.746235] systemd-fsck[220]: Automatically removing dirty bit.
-[    4.747562] systemd-fsck[220]: Performing changes.
-[    4.748894] systemd-fsck[220]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
-[  OK  ] Started File System Check on /dev/mmcblk0p1.
+Sun Jan  1 18:37:46 EST 2017
 [  OK  ] Started Load/Save Random Seed.
+[    5.988919] systemd-fsck[216]: fsck.fat 3.0.27 (2014-11-12)
+[    5.990836] systemd-fsck[216]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    5.993140] systemd-fsck[216]: Automatically removing dirty bit.
+[    5.994645] systemd-fsck[216]: Performing changes.
+[    5.995852] systemd-fsck[216]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+[  OK  ] Started File System Check on /dev/mmcblk0p1.
+         Mounting /boot...
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-         Mounting /boot...
-[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
+[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Mounted /boot.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
@@ -61,6 +60,7 @@ Sun Jan  1 18:34:15 EST 2017
 [  OK  ] Started LSB: Set up cgroupfs mounts..
 [  OK  ] Started LSB: Autogenerate and use a swap file.
 [  OK  ] Started LSB: triggerhappy hotkey daemon.
+[  OK  ] Started Login Service.
 [  OK  ] Reached target Network.
          Starting OpenBSD Secure Shell server...
 [  OK  ] Started OpenBSD Secure Shell server.
@@ -71,9 +71,7 @@ Sun Jan  1 18:34:15 EST 2017
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
 [  OK  ] Started /etc/rc.local Compatibility.
-[  OK  ] Started Login Service.
 [  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
-[  OK  ] Started System Logging Service.
 Host rpi3 IP address 192.168.0.17
