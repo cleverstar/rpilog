@@ -6,7 +6,7 @@ for ((i=0; i<16; i++)); do
 done
     
 cd $(dirname $0)
-git pull
+git pull --commit
 update_file=boot.log.$(hostname)
 date > $update_file
 sed -e 's/.\[32m//' -e 's/.\[0m//' /var/log/boot.log >> $update_file

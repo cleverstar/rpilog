@@ -1,18 +1,13 @@
-Sat Dec 31 15:57:31 EST 2016
+Sat Dec 31 22:14:37 EST 2016
 [  OK  ] Started Load/Save Random Seed.
-[    5.002179] systemd-fsck[222]: fsck.fat 3.0.27 (2014-11-12)
-[    5.004027] systemd-fsck[222]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    5.005263] systemd-fsck[222]: Automatically removing dirty bit.
-[    5.008134] systemd-fsck[222]: Performing changes.
-[    5.009882] systemd-fsck[222]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+[    4.562471] systemd-fsck[218]: fsck.fat 3.0.27 (2014-11-12)
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
+         Mounting /boot...
+[    4.576603] systemd-fsck[218]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-         Mounting /boot...
 [  OK  ] Started Show Plymouth Boot Screen.
-[  OK  ] Reached target Paths.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
-[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Mounted /boot.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
@@ -22,10 +17,12 @@ Sat Dec 31 15:57:31 EST 2016
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unles... is pressed)...
          Starting LSB: Raise network interfaces....
+[  OK  ] Reached target Paths.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
-[  OK  ] Started Create Volatile Files and Directories.
+[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless...ey is pressed).
+[  OK  ] Started Create Volatile Files and Directories.
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started LSB: Prepare console.
          Starting LSB: Set console font and keymap...
@@ -70,8 +67,8 @@ Sat Dec 31 15:57:31 EST 2016
          Starting LSB: Start NTP daemon...
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
-[  OK  ] Started /etc/rc.local Compatibility.
 [  OK  ] Started Login Service.
+[  OK  ] Started /etc/rc.local Compatibility.
 [  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
