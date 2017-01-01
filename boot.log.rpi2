@@ -1,16 +1,18 @@
 Sun Jan  1 03:38:30 EST 2017
-[    4.409922] systemd-fsck[207]: fsck.fat 3.0.27 (2014-11-12)
+         Starting Load/Save Random Seed...
+[    5.785597] systemd-fsck[214]: fsck.fat 3.0.27 (2014-11-12)
 [  OK  ] Reached target Local File Systems (Pre).
-[    4.421766] systemd-fsck[207]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
-[  OK  ] Started File System Check on /dev/mmcblk0p1.
+[    5.801508] systemd-fsck[214]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    5.803365] systemd-fsck[214]: Automatically removing dirty bit.
+[    5.804815] [systemd-fsck  OK  [214]: ] Performing changes.Started File System Check on /dev/mmcblk0p1.
+
+[    5.806168] systemd-fsck[214]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Started Load/Save Random Seed.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
          Mounting /boot...
-[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
-[  OK  ] Created slice system-ifup.slice.
-[  OK  ] Reached target Paths.
+[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Mounted /boot.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
@@ -20,6 +22,8 @@ Sun Jan  1 03:38:30 EST 2017
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
          Starting LSB: Raise network interfaces....
+[  OK  ] Created slice system-ifup.slice.
+[  OK  ] Reached target Paths.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Create Volatile Files and Directories.
 [  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
