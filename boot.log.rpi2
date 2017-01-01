@@ -1,19 +1,21 @@
-Sun Jan  1 03:38:30 EST 2017
+Sun Jan  1 03:38:29 EST 2017
+[  OK  ] Started Remount Root and Kernel File Systems.
          Starting Load/Save Random Seed...
-[    5.785597] systemd-fsck[214]: fsck.fat 3.0.27 (2014-11-12)
 [  OK  ] Reached target Local File Systems (Pre).
-[    5.801508] systemd-fsck[214]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    5.803365] systemd-fsck[214]: Automatically removing dirty bit.
-[    5.804815] [systemd-fsck  OK  [214]: ] Performing changes.Started File System Check on /dev/mmcblk0p1.
-
-[    5.806168] systemd-fsck[214]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Started Load/Save Random Seed.
+[    5.911570] systemd-fsck[219]: fsck.fat 3.0.27 (2014-11-12)
+[    5.913336] systemd-fsck[219]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    5.914664] systemd-fsck[219]: Automatically removing dirty bit.
+[    5.915868] systemd-fsck[219]: Performing changes.
+[  OK  ] Started File System Check on /dev/mmcblk0p1.
+[    5.917195] systemd-fsck[219]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+         Mounting /boot...
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-         Mounting /boot...
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
-[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Mounted /boot.
+[  OK  ] Started Show Plymouth Boot Screen.
+[  OK  ] Reached target Paths.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
@@ -23,11 +25,10 @@ Sun Jan  1 03:38:30 EST 2017
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
          Starting LSB: Raise network interfaces....
 [  OK  ] Created slice system-ifup.slice.
-[  OK  ] Reached target Paths.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Create Volatile Files and Directories.
-[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started LSB: Prepare console.
          Starting LSB: Set console font and keymap...

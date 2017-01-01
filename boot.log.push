@@ -21,6 +21,7 @@ if [ "$from_host" = "$myhost" ]; then
     test "$myhost" = "rpi0" && git pull --commit
     update_file=boot.log.$myhost
     date > $update_file
+date > ~/temp.txt
     sed -e 's/.\[32m//' -e 's/.\[0m//' /var/log/boot.log >> $update_file
     echo "Host $(hostname) IP address $myip" >> $update_file
 else
