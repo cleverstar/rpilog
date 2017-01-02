@@ -1,12 +1,14 @@
-Mon Jan  2 15:06:10 EST 2017
-[    4.694710] systemd-fsck[204]: fsck.fat 3.0.27 (2014-11-12)
+Mon Jan  2 15:20:48 EST 2017
+[  OK  ] Started Remount Root and Kernel File Systems.
+         Starting Load/Save Random Seed...
 [  OK  ] Reached target Local File Systems (Pre).
-[  OK  ] Started File System Check on /dev/mmcblk0p1.
-[    4.706258] systemd-fsck[204]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Started Load/Save Random Seed.
-         Mounting /boot...
+[    4.471456] systemd-fsck[221]: fsck.fat 3.0.27 (2014-11-12)
+[    4.473007] systemd-fsck[221]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+[  OK  ] Started File System Check on /dev/mmcblk0p1.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
+         Mounting /boot...
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Reached target Paths.
@@ -26,8 +28,8 @@ Mon Jan  2 15:06:10 EST 2017
 [  OK  ] Started Create Volatile Files and Directories.
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started LSB: Prepare console.
-[  OK  ] Started Update UTMP about System Boot/Shutdown.
          Starting LSB: Set console font and keymap...
+[  OK  ] Started Update UTMP about System Boot/Shutdown.
 [  OK  ] Started LSB: Set console font and keymap.
 [  OK  ] Started LSB: Raise network interfaces..
          Starting ifup for wlan0...
@@ -69,8 +71,8 @@ Mon Jan  2 15:06:10 EST 2017
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
 [  OK  ] Started /etc/rc.local Compatibility.
-[  OK  ] Started Permit User Sessions.
 [  OK  ] Started Login Service.
+[  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
 Host rpi0 IP address 192.168.0.16
