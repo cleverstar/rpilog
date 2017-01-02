@@ -1,19 +1,18 @@
-Mon Jan  2 15:23:42 EST 2017
+Mon Jan  2 15:25:13 EST 2017
+         Starting Load/Save Random Seed...
 [  OK  ] Reached target Local File Systems (Pre).
-[    4.631646] systemd-fsck[204]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    4.633102] systemd-fsck[204]: Automatically removing dirty bit.
-[    4.634584] systemd-fsck[204]: Performing changes.
+[    4.395694] systemd-fsck[218]: fsck.fat 3.0.27 (2014-11-12)
+[    4.397416] systemd-fsck[218]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
-[    4.635928] systemd-fsck[204]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
          Mounting /boot...
 [  OK  ] Started Load/Save Random Seed.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Reached target Paths.
-[  OK  ] Created slice system-ifup.slice.
+[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Mounted /boot.
+[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
