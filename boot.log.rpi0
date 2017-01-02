@@ -1,13 +1,15 @@
-Mon Jan  2 15:22:19 EST 2017
+Mon Jan  2 15:23:42 EST 2017
 [  OK  ] Reached target Local File Systems (Pre).
+[    5.022615] systemd-fsck[221]: fsck.fat 3.0.27 (2014-11-12)
+[    5.024195] systemd-fsck[221]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    5.025437] systemd-fsck[221]: Automatically removing dirty bit.
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
-[    4.587375] systemd-fsck[216]: fsck.fat 3.0.27 (2014-11-12)
-[    4.588468] systemd-fsck[216]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+[    5.026604] systemd-fsck[221]: Performing changes.
+         Mounting /boot...
+[    5.027414] systemd-fsck[221]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Started Load/Save Random Seed.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-         Mounting /boot...
-[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Mounted /boot.
@@ -20,10 +22,11 @@ Mon Jan  2 15:22:19 EST 2017
          Starting LSB: Switch to ondemand cpu governor (unles... is pressed)...
          Starting LSB: Raise network interfaces....
 [  OK  ] Reached target Paths.
+[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
-[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
-[  OK  ] Started LSB: Switch to ondemand cpu governor (unless...ey is pressed).
 [  OK  ] Started Create Volatile Files and Directories.
+[  OK  ] Started LSB: Switch to ondemand cpu governor (unless...ey is pressed).
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started LSB: Prepare console.
          Starting LSB: Set console font and keymap...
@@ -69,8 +72,8 @@ Mon Jan  2 15:22:19 EST 2017
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
 [  OK  ] Started /etc/rc.local Compatibility.
-[  OK  ] Started Login Service.
 [  OK  ] Started Permit User Sessions.
+[  OK  ] Started Login Service.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
 Host rpi0 IP address 192.168.0.16
