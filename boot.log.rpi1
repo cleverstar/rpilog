@@ -1,17 +1,17 @@
-Mon Jan  2 03:55:19 EST 2017
-[    4.434869] systemd-fsck[219]: fsck.fat 3.0.27 (2014-11-12)
+Mon Jan  2 03:58:31 EST 2017
+[    4.382823] systemd-fsck[213]: fsck.fat 3.0.27 (2014-11-12)
 [  OK  ] Reached target Local File Systems (Pre).
-[    4.441650] systemd-fsck[219]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+[    4.402856] systemd-fsck[213]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
 [  OK  ] Started Load/Save Random Seed.
+         Mounting /boot...
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-         Mounting /boot...
-[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
+[  OK  ] Mounted /boot.
+[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Created slice system-ifup.slice.
 [  OK  ] Reached target Paths.
-[  OK  ] Mounted /boot.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
@@ -20,14 +20,14 @@ Mon Jan  2 03:55:19 EST 2017
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
          Starting LSB: Raise network interfaces....
-[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Create Volatile Files and Directories.
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started LSB: Prepare console.
-[  OK  ] Started Update UTMP about System Boot/Shutdown.
          Starting LSB: Set console font and keymap...
+[  OK  ] Started Update UTMP about System Boot/Shutdown.
 [  OK  ] Started LSB: Set console font and keymap.
 [  OK  ] Started LSB: Raise network interfaces..
          Starting ifup for wlan0...
