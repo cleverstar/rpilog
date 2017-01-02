@@ -1,19 +1,11 @@
-Mon Jan  2 01:52:11 EST 2017
-[  OK  ] Started Load/Save Random Seed.
-[    5.889733] systemd-fsck[222]: fsck.fat 3.0.27 (2014-11-12)
-[    5.891596] systemd-fsck[222]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    5.893175] [systemd-fsck  OK  [222]: ] Automatically removing dirty bit.Started File System Check on /dev/mmcblk0p1.
-
+Mon Jan  2 01:56:36 EST 2017
+[    4.458463] systemd-fsck[207]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+[  OK  ] Started File System Check on /dev/mmcblk0p1.
          Mounting /boot...
-[    5.894772] systemd-fsck[222]: Performing changes.
-[    5.895945] systemd-fsck[222]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+[  OK  ] Started Load/Save Random Seed.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Mounted /boot.
-[  OK  ] Started Show Plymouth Boot Screen.
-[  OK  ] Created slice system-ifup.slice.
-[  OK  ] Reached target Paths.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
@@ -22,11 +14,15 @@ Mon Jan  2 01:52:11 EST 2017
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
          Starting LSB: Raise network interfaces....
+[  OK  ] Started Show Plymouth Boot Screen.
+[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Create Volatile Files and Directories.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
 [  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
+[  OK  ] Created slice system-ifup.slice.
          Starting Update UTMP about System Boot/Shutdown...
+[  OK  ] Reached target Paths.
 [  OK  ] Started LSB: Prepare console.
          Starting LSB: Set console font and keymap...
 [  OK  ] Started Update UTMP about System Boot/Shutdown.
