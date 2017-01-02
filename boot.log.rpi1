@@ -1,15 +1,19 @@
-Mon Jan  2 02:48:05 EST 2017
-[  OK  ] Started Load/Save Random Seed.
-[    4.387130] systemd-fsck[220]: fsck.fat 3.0.27 (2014-11-12)
-[    4.388776] systemd-fsck[220]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+Mon Jan  2 02:48:06 EST 2017
+         Starting Load/Save Random Seed...
+[  OK  ] Reached target Local File Systems (Pre).
+[    4.844919] systemd-fsck[212]: fsck.fat 3.0.27 (2014-11-12)
+[    4.847100] systemd-fsck[212]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    4.848897] systemd-fsck[212]: Automatically removing dirty bit.
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
+[    4.851445] systemd-fsck[212]: Performing changes.
+[    4.857259] systemd-fsck[212]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
          Mounting /boot...
+[  OK  ] Started Load/Save Random Seed.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
+[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Mounted /boot.
 [  OK  ] Started Show Plymouth Boot Screen.
-[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
-[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Reached target Paths.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
@@ -20,9 +24,10 @@ Mon Jan  2 02:48:05 EST 2017
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
          Starting LSB: Raise network interfaces....
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
-[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
 [  OK  ] Started Create Volatile Files and Directories.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
+[  OK  ] Created slice system-ifup.slice.
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started Update UTMP about System Boot/Shutdown.
 [  OK  ] Started LSB: Prepare console.
