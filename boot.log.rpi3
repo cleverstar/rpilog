@@ -1,15 +1,16 @@
 Mon Jan  2 03:50:21 EST 2017
-[  OK  ] Started Load/Save Random Seed.
-[    4.436101] systemd-fsck[221]: fsck.fat 3.0.27 (2014-11-12)
-[    4.439324] systemd-fsck[221]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+[  OK  ] Reached target Local File Systems (Pre).
+[    4.561934] systemd-fsck[202]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    4.563609] systemd-fsck[202]: Automatically removing dirty bit.
+[    4.565098] systemd-fsck[202]: Performing changes.
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
-         Mounting /boot...
+[    4.566882] systemd-fsck[202]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+[  OK  ] Started Load/Save Random Seed.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-[  OK  ] Started Show Plymouth Boot Screen.
-[  OK  ] Reached target Paths.
+         Mounting /boot...
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
-[  OK  ] Created slice system-ifup.slice.
+[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Mounted /boot.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
@@ -19,14 +20,16 @@ Mon Jan  2 03:50:21 EST 2017
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
          Starting LSB: Raise network interfaces....
+[  OK  ] Reached target Paths.
+[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
-[  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
-[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
 [  OK  ] Started Create Volatile Files and Directories.
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
+[  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
          Starting Update UTMP about System Boot/Shutdown...
+[  OK  ] Started Update UTMP about System Boot/Shutdown.
 [  OK  ] Started LSB: Prepare console.
          Starting LSB: Set console font and keymap...
-[  OK  ] Started Update UTMP about System Boot/Shutdown.
 [  OK  ] Started LSB: Set console font and keymap.
 [  OK  ] Started LSB: Raise network interfaces..
          Starting ifup for wlan0...
@@ -67,8 +70,8 @@ Mon Jan  2 03:50:21 EST 2017
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
 [  OK  ] Started /etc/rc.local Compatibility.
-[  OK  ] Started Permit User Sessions.
 [  OK  ] Started Login Service.
+[  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
 Host rpi3 IP address 192.168.0.17
