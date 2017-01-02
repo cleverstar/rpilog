@@ -1,17 +1,17 @@
-Mon Jan  2 01:36:25 EST 2017
-[  OK  ] Started Load/Save Random Seed.
-[    4.541546] systemd-fsck[217]: fsck.fat 3.0.27 (2014-11-12)
-[    4.543156] systemd-fsck[217]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    4.544434] systemd-fsck[217]: Automatically removing dirty bit.
+Mon Jan  2 01:39:30 EST 2017
+[  OK  ] Reached target Local File Systems (Pre).
+[    5.688547] systemd-fsck[206]: fsck.fat 3.0.27 (2014-11-12)
+[    5.690433] systemd-fsck[206]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    5.692008] systemd-fsck[206]: Automatically removing dirty bit.
+[    5.693206] systemd-fsck[206]: Performing changes.
+[    5.694251] systemd-fsck[206]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
-[    4.545786] systemd-fsck[217]: Performing changes.
+[  OK  ] Started Load/Save Random Seed.
          Mounting /boot...
-[    4.546709] systemd-fsck[217]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
-[  OK  ] Started Show Plymouth Boot Screen.
-[  OK  ] Reached target Paths.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
+[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Mounted /boot.
 [  OK  ] Created slice system-ifup.slice.
 [  OK  ] Reached target Local File Systems.
@@ -22,8 +22,9 @@ Mon Jan  2 01:36:25 EST 2017
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
          Starting LSB: Raise network interfaces....
-[  OK  ] Started Create Volatile Files and Directories.
+[  OK  ] Reached target Paths.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
+[  OK  ] Started Create Volatile Files and Directories.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
 [  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
          Starting Update UTMP about System Boot/Shutdown...
