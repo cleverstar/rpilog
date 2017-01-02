@@ -1,20 +1,16 @@
-Mon Jan  2 03:46:12 EST 2017
+Mon Jan  2 03:48:55 EST 2017
 [  OK  ] Reached target Local File Systems (Pre).
-[    5.115744] systemd-fsck[213]: fsck.fat 3.0.27 (2014-11-12)
-[    5.118406] [  OK  ] Started File System Check on /dev/mmcblk0p1.
-systemd-fsck[213]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    5.120231] systemd-fsck[213]: Automatically removing dirty bit.
-[    5.121231] systemd-fsck[213]: Performing changes.
-[    5.122626] systemd-fsck[213]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+[    4.563959] systemd-fsck[219]: fsck.fat 3.0.27 (2014-11-12)
+[    4.565936] systemd-fsck[219]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+[  OK  ] Started File System Check on /dev/mmcblk0p1.
+         Mounting /boot...
 [  OK  ] Started Load/Save Random Seed.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-         Mounting /boot...
-[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
-[  OK  ] Created slice system-ifup.slice.
-[  OK  ] Reached target Paths.
+[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Mounted /boot.
+[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
@@ -23,10 +19,11 @@ systemd-fsck[213]: 0x25: Dirty bit is set. Fs was not properly unmounted and som
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unles... is pressed)...
          Starting LSB: Raise network interfaces....
-[  OK  ] Started Tell Plymouth To Write Out Runtime Data.
-[  OK  ] Started Create Volatile Files and Directories.
-[  OK  ] Started LSB: Switch to ondemand cpu governor (unless...ey is pressed).
+[  OK  ] Reached target Paths.
 [  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
+[  OK  ] Started Tell Plymouth To Write Out Runtime Data.
+[  OK  ] Started LSB: Switch to ondemand cpu governor (unless...ey is pressed).
+[  OK  ] Started Create Volatile Files and Directories.
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started LSB: Prepare console.
          Starting LSB: Set console font and keymap...
@@ -61,6 +58,7 @@ systemd-fsck[213]: 0x25: Dirty bit is set. Fs was not properly unmounted and som
 [  OK  ] Started LSB: Set up cgroupfs mounts..
 [  OK  ] Started LSB: Autogenerate and use a swap file.
 [  OK  ] Started LSB: triggerhappy hotkey daemon.
+[  OK  ] Started Login Service.
 [  OK  ] Reached target Network.
          Starting OpenBSD Secure Shell server...
 [  OK  ] Started OpenBSD Secure Shell server.
@@ -72,7 +70,6 @@ systemd-fsck[213]: 0x25: Dirty bit is set. Fs was not properly unmounted and som
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
 [  OK  ] Started /etc/rc.local Compatibility.
-[  OK  ] Started Login Service.
 [  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
