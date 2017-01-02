@@ -1,16 +1,18 @@
-Mon Jan  2 03:58:19 EST 2017
-[    4.417899] systemd-fsck[220]: fsck.fat 3.0.27 (2014-11-12)
+Mon Jan  2 04:25:36 EST 2017
 [  OK  ] Reached target Local File Systems (Pre).
-[    4.432932] systemd-fsck[220]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
-[  OK  ] Started File System Check on /dev/mmcblk0p1.
+[  OK  ] Reached target Sound Card.
+         Starting File System Check on /dev/mmcblk0p1...
 [  OK  ] Started Load/Save Random Seed.
-[  OK  ] Created slice system-systemd\x2drfkill.slice.
-         Starting Load/Save RF Kill Switch Status of rfkill0...
-         Mounting /boot...
 [  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Reached target Paths.
+[  OK  ] Created slice system-systemd\x2drfkill.slice.
+         Starting Load/Save RF Kill Switch Status of rfkill0...
+[  OK  ] Started File System Check on /dev/mmcblk0p1.
+[    4.577542] systemd-fsck[225]: fsck.fat 3.0.27 (2014-11-12)
+[    4.580308] systemd-fsck[225]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Created slice system-ifup.slice.
+         Mounting /boot...
 [  OK  ] Mounted /boot.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
@@ -67,9 +69,10 @@ Mon Jan  2 03:58:19 EST 2017
          Starting LSB: Start NTP daemon...
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
-[  OK  ] Started Login Service.
 [  OK  ] Started /etc/rc.local Compatibility.
+[  OK  ] Started Login Service.
 [  OK  ] Started Permit User Sessions.
+[  OK  ] Started System Logging Service.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
 Host rpi2 IP address 192.168.0.13
