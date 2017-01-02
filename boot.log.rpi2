@@ -1,18 +1,20 @@
-Mon Jan  2 12:17:12 EST 2017
+Mon Jan  2 12:48:43 EST 2017
+         Starting Load/Save Random Seed...
+[  OK  ] Reached target Local File Systems (Pre).
+[    4.656299] systemd-fsck[219]: fsck.fat 3.0.27 (2014-11-12)
+[    4.658404] systemd-fsck[219]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    4.659960] systemd-fsck[219]: Automatically removing dirty bit.
+[    4.661651] systemd-fsck[219]: Performing changes.
+[  OK  ] Started File System Check on /dev/mmcblk0p1.
+[    4.663407] systemd-fsck[219]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Started Load/Save Random Seed.
-[    5.812558] systemd-fsck[216]: fsck.fat 3.0.27 (2014-11-12)
-[    5.814080] systemd-fsck[216]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    5.815350] systemd-fsck[216]: Automatically removing dirty bit.
-[    5.816803] systemd-fsck[216]: Performing changes.
-[    5.818356] [systemd-fsck  OK  [216]: ] /dev/mmcblk0p1: 119 files, 2659/8057 clustersStarted File System Check on /dev/mmcblk0p1.
-
-         Mounting /boot...
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-[  OK  ] Started Show Plymouth Boot Screen.
-[  OK  ] Reached target Paths.
+         Mounting /boot...
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Created slice system-ifup.slice.
+[  OK  ] Started Show Plymouth Boot Screen.
+[  OK  ] Reached target Paths.
 [  OK  ] Mounted /boot.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
@@ -70,9 +72,8 @@ Mon Jan  2 12:17:12 EST 2017
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
 [  OK  ] Started /etc/rc.local Compatibility.
-[  OK  ] Started Permit User Sessions.
 [  OK  ] Started Login Service.
+[  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
-[  OK  ] Started System Logging Service.
 Host rpi2 IP address 192.168.0.13
