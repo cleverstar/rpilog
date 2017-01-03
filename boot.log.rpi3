@@ -1,20 +1,21 @@
-Mon Jan  2 23:05:46 EST 2017
-[    5.979747] systemd-fsck[220]: fsck.fat 3.0.27 (2014-11-12)
+Mon Jan  2 23:12:29 EST 2017
+         Starting Load/Save Random Seed...
+[    4.500967] systemd-fsck[207]: fsck.fat 3.0.27 (2014-11-12)
 [  OK  ] Reached target Local File Systems (Pre).
-[  OK  ] Started File System Check on /dev/mmcblk0p1.
-[    5.990243] systemd-fsck[220]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    5.997477] systemd-fsck[220]: Automatically removing dirty bit.
-[    5.998245] systemd-fsck[220]: Performing changes.
-[    5.998969] systemd-fsck[220]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
-         Mounting /boot...
+[    4.512195] systemd-fsck[207]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    4.513782] systemd-fsck[207]: Automatically removing dirty bit.
+[    4.515948] systemd-fsck[207]: Performing changes.
+[    4.517687] [systemd-fsck  OK  [207]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+] Started File System Check on /dev/mmcblk0p1.
 [  OK  ] Started Load/Save Random Seed.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-[  OK  ] Mounted /boot.
-[  OK  ] Started Show Plymouth Boot Screen.
+         Mounting /boot...
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Created slice system-ifup.slice.
+[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Reached target Paths.
+[  OK  ] Mounted /boot.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
@@ -73,7 +74,6 @@ Mon Jan  2 23:05:46 EST 2017
 [  OK  ] Started /etc/rc.local Compatibility.
 [  OK  ] Started Login Service.
 [  OK  ] Started Permit User Sessions.
-[  OK  ] Started System Logging Service.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
 Host rpi3 IP address 192.168.0.17
