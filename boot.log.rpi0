@@ -1,16 +1,16 @@
-Tue Jan  3 00:22:40 EST 2017
+Tue Jan  3 00:28:33 EST 2017
+         Starting Load/Save Random Seed...
 [  OK  ] Reached target Local File Systems (Pre).
-[    3.768821] systemd-fsck[218]: fsck.fat 3.0.27 (2014-11-12)
-[    3.770727] systemd-fsck[218]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
+[    3.724599] systemd-fsck[218]: fsck.fat 3.0.27 (2014-11-12)
+[    3.725959] systemd-fsck[218]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
-         Mounting /boot...
 [  OK  ] Started Load/Save Random Seed.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
+         Mounting /boot...
+[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Mounted /boot.
-[  OK  ] Started Show Plymouth Boot Screen.
-[  OK  ] Reached target Paths.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
@@ -19,11 +19,12 @@ Tue Jan  3 00:22:40 EST 2017
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unles... is pressed)...
          Starting LSB: Raise network interfaces....
+[  OK  ] Created slice system-ifup.slice.
+[  OK  ] Reached target Paths.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
 [  OK  ] Started Create Volatile Files and Directories.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless...ey is pressed).
-[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
-[  OK  ] Created slice system-ifup.slice.
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started LSB: Prepare console.
          Starting LSB: Set console font and keymap...
@@ -58,6 +59,7 @@ Tue Jan  3 00:22:40 EST 2017
 [  OK  ] Started LSB: Set up cgroupfs mounts..
 [  OK  ] Started LSB: Autogenerate and use a swap file.
 [  OK  ] Started LSB: triggerhappy hotkey daemon.
+[  OK  ] Started Login Service.
 [  OK  ] Reached target Network.
          Starting OpenBSD Secure Shell server...
 [  OK  ] Started OpenBSD Secure Shell server.
@@ -69,7 +71,6 @@ Tue Jan  3 00:22:40 EST 2017
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
 [  OK  ] Started /etc/rc.local Compatibility.
-[  OK  ] Started Login Service.
 [  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...

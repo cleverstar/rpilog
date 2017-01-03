@@ -1,14 +1,15 @@
-Mon Jan  2 23:45:11 EST 2017
+Tue Jan  3 00:28:21 EST 2017
+[  OK  ] Started Remount Root and Kernel File Systems.
          Starting Load/Save Random Seed...
 [  OK  ] Reached target Local File Systems (Pre).
-[  OK  ] Started Load/Save Random Seed.
-[    4.529677] systemd-fsck[216]: fsck.fat 3.0.27 (2014-11-12)
-[    4.531376] systemd-fsck[216]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
+[    3.479087] systemd-fsck[211]: fsck.fat 3.0.27 (2014-11-12)
+[    3.480936] systemd-fsck[211]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
+[  OK  ] Started Load/Save Random Seed.
          Mounting /boot...
-[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
+[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Reached target Paths.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Mounted /boot.
@@ -22,9 +23,9 @@ Mon Jan  2 23:45:11 EST 2017
          Starting LSB: Raise network interfaces....
 [  OK  ] Created slice system-ifup.slice.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
-[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
 [  OK  ] Started Create Volatile Files and Directories.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started LSB: Prepare console.
          Starting LSB: Set console font and keymap...
