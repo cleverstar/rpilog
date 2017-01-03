@@ -1,16 +1,21 @@
-Tue Jan  3 00:50:18 EST 2017
-systemd-fsck[207]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    4.829192] systemd-fsck[207]: Automatically removing dirty bit.
-[    4.829987] systemd-fsck[207]: Performing changes.
-[    4.830795] systemd-fsck[207]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
-[  OK  ] Started Load/Save Random Seed.
+Tue Jan  3 00:54:32 EST 2017
+         Starting Load/Save Random Seed...
+[  OK  ] Reached target Local File Systems (Pre).
+[    4.756879] systemd-fsck[217]: fsck.fat 3.0.27 (2014-11-12)
+[    4.758438] systemd-fsck[217]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    4.760423] systemd-fsck[217]: Automatically removing dirty bit.
+[  OK  ] Started File System Check on /dev/mmcblk0p1.
          Mounting /boot...
+[    4.762219] systemd-fsck[217]: Performing changes.
+[    4.763020] systemd-fsck[217]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
+[  OK  ] Started Load/Save Random Seed.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
-[  OK  ] Started Show Plymouth Boot Screen.
-[  OK  ] Reached target Paths.
 [  OK  ] Mounted /boot.
+[  OK  ] Started Show Plymouth Boot Screen.
+[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
+[  OK  ] Created slice system-ifup.slice.
+[  OK  ] Reached target Paths.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
@@ -19,7 +24,6 @@ systemd-fsck[207]: 0x25: Dirty bit is set. Fs was not properly unmounted and som
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
          Starting LSB: Raise network interfaces....
-[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Create Volatile Files and Directories.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
@@ -68,8 +72,9 @@ systemd-fsck[207]: 0x25: Dirty bit is set. Fs was not properly unmounted and som
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
 [  OK  ] Started /etc/rc.local Compatibility.
-[  OK  ] Started Permit User Sessions.
 [  OK  ] Started Login Service.
+[  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
+[  OK  ] Started System Logging Service.
 Host rpi2 IP address 192.168.0.13
