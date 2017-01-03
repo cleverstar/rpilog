@@ -1,19 +1,19 @@
-Tue Jan  3 00:54:19 EST 2017
-
+Tue Jan  3 01:03:40 EST 2017
 [  OK  ] Reached target Local File Systems (Pre).
-[  OK  ] Started Load/Save Random Seed.
-[    3.901369] systemd-fsck[219]: fsck.fat 3.0.27 (2014-11-12)
-[    3.903499] systemd-fsck[219]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
-[    3.904839] systemd-fsck[219]: Automatically removing dirty bit.
+[    4.733991] systemd-fsck[209]: fsck.fat 3.0.27 (2014-11-12)
+[    4.735468] systemd-fsck[209]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    4.737385] systemd-fsck[209]: Automatically removing dirty bit.
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
-[    3.906642] systemd-fsck[219]: Performing changes.
+[    4.738851] systemd-fsck[209]: Performing changes.
+[    4.739854] systemd-fsck[209]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
+[  OK  ] Started Load/Save Random Seed.
          Mounting /boot...
-[    3.907934] systemd-fsck[219]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-[  OK  ] Mounted /boot.
+[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Started Show Plymouth Boot Screen.
-[  OK  ] Reached target Paths.
+[  OK  ] Mounted /boot.
+[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
@@ -22,12 +22,11 @@ Tue Jan  3 00:54:19 EST 2017
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
          Starting LSB: Raise network interfaces....
-[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
+[  OK  ] Reached target Paths.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Create Volatile Files and Directories.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
 [  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
-[  OK  ] Created slice system-ifup.slice.
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started LSB: Prepare console.
          Starting LSB: Set console font and keymap...
@@ -62,6 +61,7 @@ Tue Jan  3 00:54:19 EST 2017
 [  OK  ] Started LSB: Set up cgroupfs mounts..
 [  OK  ] Started LSB: Autogenerate and use a swap file.
 [  OK  ] Started LSB: triggerhappy hotkey daemon.
+[  OK  ] Started Login Service.
 [  OK  ] Reached target Network.
          Starting OpenBSD Secure Shell server...
 [  OK  ] Started OpenBSD Secure Shell server.
@@ -72,7 +72,7 @@ Tue Jan  3 00:54:19 EST 2017
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
 [  OK  ] Started /etc/rc.local Compatibility.
-[  OK  ] Started Login Service.
+[  OK  ] Started System Logging Service.
 [  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
