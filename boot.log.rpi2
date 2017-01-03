@@ -1,16 +1,17 @@
-Mon Jan  2 15:25:13 EST 2017
-         Starting Load/Save Random Seed...
-[  OK  ] Reached target Local File Systems (Pre).
-[    4.395694] systemd-fsck[218]: fsck.fat 3.0.27 (2014-11-12)
-[    4.397416] systemd-fsck[218]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
-[  OK  ] Started File System Check on /dev/mmcblk0p1.
-         Mounting /boot...
+Mon Jan  2 21:19:42 EST 2017
 [  OK  ] Started Load/Save Random Seed.
+[    5.747688] systemd-fsck[214]: fsck.fat 3.0.27 (2014-11-12)
+[    5.749915] systemd-fsck[214]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[  OK  ] Started File System Check on /dev/mmcblk0p1.
+[    5.752028] systemd-fsck[214]: Automatically removing dirty bit.
+[    5.753125] systemd-fsck[214]: Performing changes.
+[    5.754788] systemd-fsck[214]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
+         Mounting /boot...
+[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Reached target Paths.
-[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Mounted /boot.
 [  OK  ] Created slice system-ifup.slice.
 [  OK  ] Reached target Local File Systems.
@@ -59,6 +60,7 @@ Mon Jan  2 15:25:13 EST 2017
 [  OK  ] Started LSB: Set up cgroupfs mounts..
 [  OK  ] Started LSB: Autogenerate and use a swap file.
 [  OK  ] Started LSB: triggerhappy hotkey daemon.
+[  OK  ] Started Login Service.
 [  OK  ] Reached target Network.
          Starting OpenBSD Secure Shell server...
 [  OK  ] Started OpenBSD Secure Shell server.
@@ -69,7 +71,6 @@ Mon Jan  2 15:25:13 EST 2017
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
 [  OK  ] Started /etc/rc.local Compatibility.
-[  OK  ] Started Login Service.
 [  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
