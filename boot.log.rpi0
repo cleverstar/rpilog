@@ -1,9 +1,12 @@
-Tue Jan  3 00:47:53 EST 2017
+Tue Jan  3 00:47:22 EST 2017
 [  OK  ] Reached target Local File Systems (Pre).
-[  OK  ] Started Load/Save Random Seed.
-[    3.646760] systemd-fsck[216]: fsck.fat 3.0.27 (2014-11-12)
-[    3.648435] systemd-fsck[216]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
+[    4.251293] systemd-fsck[215]: fsck.fat 3.0.27 (2014-11-12)
+[    4.253168] systemd-fsck[215]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    4.254517] systemd-fsck[215]: Automatically removing dirty bit.
+[    4.255676] systemd-fsck[215]: Performing changes.
+[    4.256815] systemd-fsck[215]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
+[  OK  ] Started Load/Save Random Seed.
          Mounting /boot...
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
@@ -21,13 +24,13 @@ Tue Jan  3 00:47:53 EST 2017
          Starting LSB: Switch to ondemand cpu governor (unles... is pressed)...
          Starting LSB: Raise network interfaces....
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
-[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
-[  OK  ] Started LSB: Switch to ondemand cpu governor (unless...ey is pressed).
 [  OK  ] Started Create Volatile Files and Directories.
+[  OK  ] Started LSB: Switch to ondemand cpu governor (unless...ey is pressed).
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
          Starting Update UTMP about System Boot/Shutdown...
-[  OK  ] Started Update UTMP about System Boot/Shutdown.
 [  OK  ] Started LSB: Prepare console.
          Starting LSB: Set console font and keymap...
+[  OK  ] Started Update UTMP about System Boot/Shutdown.
 [  OK  ] Started LSB: Set console font and keymap.
 [  OK  ] Started LSB: Raise network interfaces..
          Starting ifup for wlan0...
