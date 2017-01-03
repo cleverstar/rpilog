@@ -1,17 +1,15 @@
-Tue Jan  3 00:28:21 EST 2017
-[  OK  ] Started Remount Root and Kernel File Systems.
-         Starting Load/Save Random Seed...
-[  OK  ] Reached target Local File Systems (Pre).
-[    3.479087] systemd-fsck[211]: fsck.fat 3.0.27 (2014-11-12)
-[    3.480936] systemd-fsck[211]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
-[  OK  ] Started File System Check on /dev/mmcblk0p1.
+Tue Jan  3 00:50:18 EST 2017
+systemd-fsck[207]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    4.829192] systemd-fsck[207]: Automatically removing dirty bit.
+[    4.829987] systemd-fsck[207]: Performing changes.
+[    4.830795] systemd-fsck[207]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
 [  OK  ] Started Load/Save Random Seed.
          Mounting /boot...
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
+[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Reached target Paths.
-[  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Mounted /boot.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
@@ -69,9 +67,9 @@ Tue Jan  3 00:28:21 EST 2017
          Starting LSB: Start NTP daemon...
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
-[  OK  ] Started Login Service.
 [  OK  ] Started /etc/rc.local Compatibility.
 [  OK  ] Started Permit User Sessions.
+[  OK  ] Started Login Service.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
 Host rpi2 IP address 192.168.0.13
