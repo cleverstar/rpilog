@@ -1,13 +1,13 @@
-Mon Jan  2 23:51:51 EST 2017
-[    4.678592] systemd-fsck[219]: fsck.fat 3.0.27 (2014-11-12)
-[  OK  ] Reached target Local File Systems (Pre).
-[    4.684454] systemd-fsck[219]: /dev/mmcblk0p1: 119 files, 2659/8057 clusters
-[  OK  ] Started File System Check on /dev/mmcblk0p1.
+Tue Jan  3 00:08:39 EST 2017
 [  OK  ] Started Load/Save Random Seed.
+[    3.698097] systemd-fsck[219]: fsck.fat 3.0.27 (2014-11-12)
+[    3.699610] systemd-fsck[219]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
+[  OK  ] Started File System Check on /dev/mmcblk0p1.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
          Mounting /boot...
 [  OK  ] Started Show Plymouth Boot Screen.
+[  OK  ] Reached target Paths.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Mounted /boot.
 [  OK  ] Reached target Local File Systems.
@@ -19,7 +19,6 @@ Mon Jan  2 23:51:51 EST 2017
          Starting LSB: Switch to ondemand cpu governor (unles... is pressed)...
          Starting LSB: Raise network interfaces....
 [  OK  ] Created slice system-ifup.slice.
-[  OK  ] Reached target Paths.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Create Volatile Files and Directories.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless...ey is pressed).
