@@ -1,15 +1,20 @@
-Wed Jan  4 20:59:46 EST 2017
-[    3.460662] systemd-fsck[213]: fsck.fat 3.0.27 (2014-11-12)
-[    3.501545] systemd-fsck[213]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
+Wed Jan  4 21:26:09 EST 2017
 [  OK  ] Reached target Local File Systems (Pre).
+[    4.859475] systemd-fsck[217]: fsck.fat 3.0.27 (2014-11-12)
+[    4.861385] systemd-fsck[217]: 0x25: Dirty bit is set. Fs was not properly unmounted and some data may be corrupt.
+[    4.862977] systemd-fsck[217]: Automatically removing dirty bit.
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
+[    4.865956] systemd-fsck[217]: Performing changes.
+[    4.867939] systemd-fsck[217]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
 [  OK  ] Started Load/Save Random Seed.
+         Mounting /boot...
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
-         Mounting /boot...
-[  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
+[  OK  ] Started Show Plymouth Boot Screen.
+[  OK  ] Reached target Paths.
 [  OK  ] Mounted /boot.
+[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
@@ -18,12 +23,10 @@ Wed Jan  4 20:59:46 EST 2017
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
          Starting LSB: Raise network interfaces....
-[  OK  ] Created slice system-ifup.slice.
-[  OK  ] Reached target Paths.
-[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Create Volatile Files and Directories.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started LSB: Prepare console.
          Starting LSB: Set console font and keymap...
@@ -72,4 +75,4 @@ Wed Jan  4 20:59:46 EST 2017
 [  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
-Host rpi2 IP address 169.254.40.215
+Host rpi2 IP address 192.168.0.13
