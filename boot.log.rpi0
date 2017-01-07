@@ -1,16 +1,15 @@
-Wed Jan  4 22:02:07 EST 2017
-[  OK  ] Reached target Local File Systems (Pre).
-[    3.643484] systemd-fsck[210]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
-[  OK  ] Started File System Check on /dev/mmcblk0p1.
+Fri Jan  6 20:36:58 EST 2017
 [  OK  ] Started Load/Save Random Seed.
+[    3.908586] systemd-fsck[221]: fsck.fat 3.0.27 (2014-11-12)
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
+[    3.910368] systemd-fsck[221]: /dev/mmcblk0p1: 121 files, 2663/8057 clusters
+[  OK  ] Started File System Check on /dev/mmcblk0p1.
          Mounting /boot...
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Started Show Plymouth Boot Screen.
-[  OK  ] Reached target Paths.
-[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Mounted /boot.
+[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
@@ -19,14 +18,15 @@ Wed Jan  4 22:02:07 EST 2017
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unles... is pressed)...
          Starting LSB: Raise network interfaces....
+[  OK  ] Reached target Paths.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless...ey is pressed).
 [  OK  ] Started Create Volatile Files and Directories.
          Starting Update UTMP about System Boot/Shutdown...
 [  OK  ] Started LSB: Prepare console.
-[  OK  ] Started Update UTMP about System Boot/Shutdown.
          Starting LSB: Set console font and keymap...
+[  OK  ] Started Update UTMP about System Boot/Shutdown.
 [  OK  ] Started LSB: Set console font and keymap.
 [  OK  ] Started LSB: Raise network interfaces..
          Starting ifup for wlan0...
@@ -68,9 +68,8 @@ Wed Jan  4 22:02:07 EST 2017
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
 [  OK  ] Started /etc/rc.local Compatibility.
-[  OK  ] Started Login Service.
-[  OK  ] Started System Logging Service.
 [  OK  ] Started Permit User Sessions.
+[  OK  ] Started Login Service.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
-Host rpi0 IP address 192.168.0.15
+Host rpi0 IP address 192.168.0.16
