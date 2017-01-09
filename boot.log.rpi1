@@ -1,19 +1,16 @@
-Fri Jan  6 20:47:45 EST 2017
-[  OK  ] Started Remount Root and Kernel File Systems.
-         Starting Load/Save Random Seed...
+Sun Jan  8 22:22:33 EST 2017
+[    3.459378] systemd-fsck[206]: fsck.fat 3.0.27 (2014-11-12)
 [  OK  ] Reached target Local File Systems (Pre).
-[    3.459494] systemd-fsck[217]: fsck.fat 3.0.27 (2014-11-12)
-[    3.461253] systemd-fsck[217]: /dev/mmcblk0p1: 122 files, 2664/8057 clusters
+[    3.481419] systemd-fsck[206]: /dev/mmcblk0p1: 122 files, 2664/8057 clusters
 [  OK  ] Started File System Check on /dev/mmcblk0p1.
-         Mounting /boot...
 [  OK  ] Started Load/Save Random Seed.
+         Mounting /boot...
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
 [  OK  ] Started Show Plymouth Boot Screen.
 [  OK  ] Reached target Paths.
 [  OK  ] Started Load/Save RF Kill Switch Status of rfkill0.
 [  OK  ] Mounted /boot.
-[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Reached target Local File Systems.
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting Create Volatile Files and Directories...
@@ -22,6 +19,7 @@ Fri Jan  6 20:47:45 EST 2017
          Starting LSB: Prepare console...
          Starting LSB: Switch to ondemand cpu governor (unless ... is pressed)...
          Starting LSB: Raise network interfaces....
+[  OK  ] Created slice system-ifup.slice.
 [  OK  ] Started Tell Plymouth To Write Out Runtime Data.
 [  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
 [  OK  ] Started LSB: Switch to ondemand cpu governor (unless s...ey is pressed).
@@ -60,6 +58,7 @@ Fri Jan  6 20:47:45 EST 2017
 [  OK  ] Started LSB: Set up cgroupfs mounts..
 [  OK  ] Started LSB: Autogenerate and use a swap file.
 [  OK  ] Started LSB: triggerhappy hotkey daemon.
+[  OK  ] Started Login Service.
 [  OK  ] Reached target Network.
          Starting OpenBSD Secure Shell server...
 [  OK  ] Started OpenBSD Secure Shell server.
@@ -70,7 +69,6 @@ Fri Jan  6 20:47:45 EST 2017
          Starting Docker Application Container Engine...
          Starting Permit User Sessions...
 [  OK  ] Started /etc/rc.local Compatibility.
-[  OK  ] Started Login Service.
 [  OK  ] Started Permit User Sessions.
          Starting Hold until boot process finishes up...
          Starting Terminate Plymouth Boot Screen...
